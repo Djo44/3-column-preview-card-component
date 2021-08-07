@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  height: 100vh;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.sedans {
+  width: 300px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: hsl(31, 77%, 52%);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+  border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+  width: 300px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: hsl(184, 100%, 22%);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+}
+
+.luxury {
+  width: 300px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: hsl(179, 100%, 13%);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+  border-radius: 0 10px 10px 0;
+}
+
+.sedans > .btn {
+  border-radius: 50px;
+  height: 50px;
+  width: 150px;
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+}
+.suvs > .btn {
+  border-radius: 50px;
+  height: 50px;
+  width: 150px;
+  color: hsl(184, 100%, 22%);
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+}
+.luxury > .btn {
+  border-radius: 50px;
+  height: 50px;
+  width: 150px;
+  color: hsl(179, 100%, 13%);
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .sedans {
+    border-radius: 10px 10px 0 0;
+    margin-top: 2rem;
+  }
+
+  .luxury {
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 2rem;
+  }
+}
